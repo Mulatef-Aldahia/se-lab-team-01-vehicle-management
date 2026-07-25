@@ -12,5 +12,7 @@ Route::get('/', function () {
 Route::get('/booking', [BookingController::class, 'create']);
 Route::post('/booking', [BookingController::class, 'store']);
 
-// مسار عرض السيارات المتاحة
+// مسارات السيارات
 Route::get('/vehicles', [VehicleController::class, 'index']);
+Route::get('/vehicles/create', [VehicleController::class, 'create']);
+Route::post('/vehicles', [VehicleController::class, 'store']);
